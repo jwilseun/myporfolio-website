@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/568da00dd4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images_assets/Logo.png" class="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Graphic Designer/Video Editor</p>
+            <h1>Hi, I'm <span>Wilson</span><br>From Silang, Cavite</h1>
+        </div>
+    </div>
+</div>
+<!------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images_assets/aboutme.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Welcome to my portfolio! I'm John Wilson Ramos Montoya, a 26-year-old graphic designer 
+                    currently residing in Silang. With a passion for both photography and videography, I find 
+                    joy in capturing moments and telling stories through visuals. Beyond my design work, I 
+                    indulge in online gaming as a hobby, finding it to be a source of relaxation and 
+                    inspiration. Through my creative endeavors, I strive to merge my diverse interests to 
+                    produce compelling and innovative designs. Let's collaborate to bring your vision to life!   </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skl')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('educ')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skl">
+                    <ul>
+                        <li><span>Graphic Design</span><br>Proficient in creating visually compelling designs using industry-standard software like Adobe Photoshop, and Canva. <br> 
+                                                           Skilled in designing logos, posters, brochures, and other marketing materials with a keen eye for detail and aesthetics.</li>
+                        <li><span>Video Editing</span><br>Experienced in editing videos using software such as DaVinci Resolve, Capcut, and Vegas. Capable of <br> 
+                                                          assembling raw footage, adding transitions, effects, and graphics, and ensuring a polished final product that meets client <br> 
+                                                          specifications.</li>
+                        <li><span>Adaptability</span><br>Able to quickly learn and master new design and video editing techniques, software, and industry trends. Flexible in adapting <br>
+                                                          to evolving project requirements and client preferences while maintaining creativity and quality.</li>
+                        <li><span>Digital Marketing</span><br>Familiarity with digital marketing strategies and platforms, including social media, and content marketing. Able to <br>
+                                                           create videos optimized for online engagement and conversion.</li>
+                        <li><span>Live Streaming</span><br> Managed livestream setup and broadcasting using OBS Studio. Like ML Tournament etc</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>Hardware Troubleshoot</span><br>Fixing Computer parts and periperals</li>
+                        <li><span>Office Staff</span><br>Handling administrative tasks like answering inqueries,organizing 
+                                                         property data using microsoft excel</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="educ">
+                    <ul>
+                        <li><span>2018 - 2022 | City College of Tagaytay</span><br>Bachelor of Science in Information Technology</li>
+                        <li><span>2009 - 2015 | Kaong National HighSchool</span><br>Secondary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h1>Graphic Designing</h1>
+                <p> Creating visual content using images, text, and layout techniques to convey messages 
+                    effectively in various mediums like print, digital, and web platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h1>Video Editing</h1>
+                <p> Manipulating and combining video files to create a completed video project. Video Editors 
+                    will cut together film clips, alter and correct sound mixing, add digital effects, and make 
+                    other essential technical changes to video files.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i>
+                <h1>Hardware Troubleshooting</h1>
+                <p> Removing, repairing and replacing faulty RAM, hard disk or video/graphic card.
+                    Cleaning dusts from RAM and Video carts slot/ports and from cooling fan.
+                    Tightening cable and jumpers on motherboard and/or components.                   
+                    Software related hardware problems such as device driver update or installation.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images_assets/graphic1.jpg">
+                <div class="layer">
+                    <h3>Graphics Lay-out </h3>
+                    <p>Some of my design as freelancer</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images_assets/graphic2.jpg">
+                <div class="layer">
+                    <h3>Video Editing </h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images_assets/graphic3.jpg">
+                <div class="layer">
+                    <h3>Hardware Troubleshoot </h3>
+                </div>
+            </div>
+        </div>
+         <a href="#" class="btn">See more</a>   
+    </div>
+</div>
+<!------------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1> 
+               <p><i class="fa-solid fa-envelope"></i>johnwilsonmontoya2@gmail.com</p>
+               <p><i class="fas fa-phone-square-alt"></i>0935-735-6841</p>
+               <div class="social-icons">
+                    <a href="https://www.facebook.com/jwilsonrm.12"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/httpswil"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/httpswil"><i class="fab fa-instagram"></i></a>
+               </div>
+               <a href="Images_assets/Montoya_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxku6NqzUtmbdtDpfy5a4JeoKc4IoMHlj97HNd6AffdkpYi2gv8onQA_GnUblNcS47E/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
